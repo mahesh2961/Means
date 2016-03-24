@@ -69,10 +69,6 @@ public class ListPresenterImpl implements ListPresenter
     {
         mListview.initializeView();
         initiateProcess();
-
-
-       /* mItemList=fetchListResponse();
-        mListview.setListAdapter(mItemList);*/
     }
 
     private void initiateProcess()

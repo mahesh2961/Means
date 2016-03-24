@@ -38,7 +38,6 @@ public class Network
                     @Override
                     public void onResponse(JSONObject response)
                     {
-                        //Log.d(TAG, response.toString());
                         listner.onResponse(response);
                     }
                 }, new Response.ErrorListener() {
@@ -50,7 +49,6 @@ public class Network
             }
         });
 
-// Adding request to request queue
         MeansApplications.getInstance().addToRequestQueue(jsonObjReq, tag_json_obj);
     }
 
@@ -70,7 +68,6 @@ public class Network
             @Override
             public void onResponse(ImageLoader.ImageContainer response, boolean arg1) {
                 if (response.getBitmap() != null) {
-                    // load image into imageview
                     listner.onResponse(response,arg1);
                 }
             }
