@@ -128,6 +128,7 @@ public class ListPresenterImpl implements ListPresenter
         else
         {
             mListview.displayProgress(View.GONE);
+            mListview.displayRetry(View.VISIBLE);
             Toast.makeText(mContext,"No words available",Toast.LENGTH_LONG).show();
         }
 
